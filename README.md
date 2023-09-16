@@ -1,15 +1,5 @@
-  Management System Projekt    
-
- [![Return arrow](../assets/return.png) Zurückkehren](../index.html#projects)
-
- ![](../assets/foreign.png) live sehen
-
- [![](../assets/coding2.png) Quellcode sehen](https://github.com/younes-47/Praktikumsprojekt)
-
 Management System Projekt
 =========================
-
-![](../assets/info.png)
 
 ### Wichtige Informationen
 
@@ -60,13 +50,13 @@ Jeder Raum kann mehrere Mitarbeiter und mehrere Geräte enthalten, daher müssen
 
 ### Klassendiagramm des Projekts
 
-![Class Diagram](../assets/Praktikumsprojekt/Klassendiagramm des Projekts.png)
+![Class Diagram](/assets/Praktikumsprojekt/Klassendiagramm des Projekts.png)
 
 ### Die Hauptseiten der Anwendung
 
 #### Anmeldeseite (Authentifizierung)
 
-![Login page](../assets/Praktikumsprojekt/1.jpeg)
+![Login page](/assets/Praktikumsprojekt/1.jpeg)
 
 Die Anmeldeseite enthält eine Box mit Einträgen für den Benutzernamen und das Passwort, das Logo des Justizministeriums und einen Titel, der die Hauptfunktionalität der Anwendung darstellt, um sie zu unterscheiden, da es andere Anwendungen gibt, die für andere Interessen verwendet werden, die auf dem lokalen Server des Berufungsgerichts gehostet werden.
 
@@ -74,63 +64,60 @@ Die Anmeldeseite enthält eine Box mit Einträgen für den Benutzernamen und das
 
 #### Seite der Mitarbeiter
 
-![](../assets/Praktikumsprojekt/6.1.jpeg)
+![](assets/Praktikumsprojekt/6.1.jpeg)
 
 Der Inhalt der Mitarbeiterseite enthält eine dynamische Tabelle, in der alle Mitarbeiter und deren relevante Informationen angezeigt werden, mit Verwaltungsschaltflächen _(Hinzufügen, Anzeigen, Ändern und Löschen)_ .
 
 Diese Seite erbt wie die anderen Seiten ein eindeutiges Template. Diese Template besteht aus einer Kopfzeile und einer Navigationsleiste. Die Kopfzeile hat ein Symbol einer Benutzerform, die ein Auswahlmenü zum Abmelden und Ändern des Passworts und des Benutzernamens anzeigt.
 
-Fügen wir zu Demonstrationszwecken einen neuen Mitarbeiter hinzu: ![](../assets/Praktikumsprojekt/5.jpeg)
+Fügen wir zu Demonstrationszwecken einen neuen Mitarbeiter hinzu: ![](assets/Praktikumsprojekt/5.jpeg)
 
-Der Mitarbeiter ist erfolgreich registriert! ![](../assets/Praktikumsprojekt/6.jpeg)
+Der Mitarbeiter ist erfolgreich registriert! ![](assets/Praktikumsprojekt/6.jpeg)
 
-Lassen Sie uns die Details des kürzlich hinzugefügten Mitarbeiters überprüfen, indem wir auf das Augensymbol klicken. Das System verfolgt auch die Versetzungen des Mitarbeiters zwischen den Räumen des Gerichts auf der Unterseite "Geschichte". ![](../assets/Praktikumsprojekt/7.gif)
+Lassen Sie uns die Details des kürzlich hinzugefügten Mitarbeiters überprüfen, indem wir auf das Augensymbol klicken. Das System verfolgt auch die Versetzungen des Mitarbeiters zwischen den Räumen des Gerichts auf der Unterseite "Geschichte". ![](assets/Praktikumsprojekt/7.gif)
 
 #### Seite der Ausrüstung
 
-![](../assets/Praktikumsprojekt/10.jpeg)
+![](assets/Praktikumsprojekt/10.jpeg)
 
 Hier können wir die gesamte Ausrüstung, die sich im Depot des Berufungsgerichts befindet, mit dem verfügbaren Bestand und anderen Details. es gibt auch die Schaltflächen zur Verwaltung _(Hinzufügen, Anzeigen, Ändern und Löschen)_ .
 
-Fügen wir zu Demonstrationszwecken eine neue Ausrüstung hinzu: ![](../assets/Praktikumsprojekt/11.jpeg)
+Fügen wir zu Demonstrationszwecken eine neue Ausrüstung hinzu: ![](assets/Praktikumsprojekt/11.jpeg)
 
-Die Ausrüstung ist erfolgreich registriert! ![](../assets/Praktikumsprojekt/12.jpeg)
+Die Ausrüstung ist erfolgreich registriert! ![](assets/Praktikumsprojekt/12.jpeg)
 
-Lassen Sie uns die Details der kürzlich hinzugefügter Ausrüstung überprüfen. Wir können auch den verfügbaren Bestand sehen und sehen, in welchem Raum die Ausrüstung bereitgestellt wurde _(Es erscheint in keinem Raum, da wir es noch nicht getan haben)_ . ![](../assets/Praktikumsprojekt/13.jpeg)
+Lassen Sie uns die Details der kürzlich hinzugefügter Ausrüstung überprüfen. Wir können auch den verfügbaren Bestand sehen und sehen, in welchem Raum die Ausrüstung bereitgestellt wurde _(Es erscheint in keinem Raum, da wir es noch nicht getan haben)_ . ![](assets/Praktikumsprojekt/13.jpeg)
 
 #### Seite der Räume
 
-![](../assets/Praktikumsprojekt/4.jpeg)
+![](assets/Praktikumsprojekt/4.jpeg)
 
 Die erste Seite, die nach der Authentifizierung angezeigt wird, ist die Raumseite. Der Inhalt der Seite Räume enthält eine dynamische Tabelle, die die aktuellen Räume innerhalb des Berufungsgerichts und die Anzahl der Mitarbeiter/Ausrüstungen in jedem Raum anzeigt sowie die Verwaltungsschaltflächen.
 
-Lassen Sie uns der raum des Fachwissens _("Section d'expertise")_ überprüfen. Wir können sehen, dass der neu hinzugefügte Mitarbeiter dort arbeitet und es keine Ausrüstung gibt. ![](../assets/Praktikumsprojekt/16.jpeg)
+Lassen Sie uns der raum des Fachwissens _("Section d'expertise")_ überprüfen. Wir können sehen, dass der neu hinzugefügte Mitarbeiter dort arbeitet und es keine Ausrüstung gibt. ![](assets/Praktikumsprojekt/16.jpeg)
 
-Lassen Sie uns also den Raum modifizieren, indem wir die kürzlich hinzugefügte Ausrüstung hinzufügen und den Namen des Raums in etwas wie "Physikalisches Labor" ändern. ![](../assets/Praktikumsprojekt/17.jpeg)
+Lassen Sie uns also den Raum modifizieren, indem wir die kürzlich hinzugefügte Ausrüstung hinzufügen und den Namen des Raums in etwas wie "Physikalisches Labor" ändern. ![](assets/Praktikumsprojekt/17.jpeg)
 
-die Änderung erfolgreich durchgeführt wurde! ![](../assets/Praktikumsprojekt/18.jpeg)
+die Änderung erfolgreich durchgeführt wurde! ![](assets/Praktikumsprojekt/18.jpeg)
 
-Wir können nun die hinzugefügte Ausrüstung mit ihrer Anzahl auf der Detailseite des Raums sehen. ![](../assets/Praktikumsprojekt/19.jpeg)
+Wir können nun die hinzugefügte Ausrüstung mit ihrer Anzahl auf der Detailseite des Raums sehen. ![](assets/Praktikumsprojekt/19.jpeg)
 
-Wenn wir die Detailseite der Ausrüstung überprüfen, können wir den verbleibenden Bestand im Depot und die Räume sehen, die diese bestimmte Ausrüstung enthalten. ![](../assets/Praktikumsprojekt/20.jpeg)
+Wenn wir die Detailseite der Ausrüstung überprüfen, können wir den verbleibenden Bestand im Depot und die Räume sehen, die diese bestimmte Ausrüstung enthalten. ![](assets/Praktikumsprojekt/20.jpeg)
 
 #### Archivseite
 
-![](../assets/Praktikumsprojekt/22.jpeg)
+![](assets/Praktikumsprojekt/22.jpeg)
 
 Auf der Archivseite werden zwei Optionen zur Auswahl angezeigt: das Mitarbeiterarchiv und das Ausrüstungsarchiv.  
 Die gelöschten Mitarbeiter und Ausrüstungen werden gespeichert und können über diesen Bereich wieder aufgerufen werden.
 
-Löschen wir zu Demonstrationszwecken die kürzlich hinzugefügten Ausrüstung und Mitarbeiter _(Bei der Löschung eines Equipments, werden alle Bestände im Depot und die Mengen in den Räumen gemeinsam ausgelöscht)_ : ![](../assets/Praktikumsprojekt/21.jpeg) ![](../assets/Praktikumsprojekt/14.jpeg)
+Löschen wir zu Demonstrationszwecken die kürzlich hinzugefügten Ausrüstung und Mitarbeiter _(Bei der Löschung eines Equipments, werden alle Bestände im Depot und die Mengen in den Räumen gemeinsam ausgelöscht)_ : ![](assets/Praktikumsprojekt/21.jpeg) ![](assets/Praktikumsprojekt/14.jpeg)
 
-Die Seite des Mitarbeiterarchivs enthält eine dynamische Tabelle der gelöschten Mitarbeiter mit der Möglichkeit, sie wiederherzustellen und auf ihre Historie zuzugreifen. ![](../assets/Praktikumsprojekt/24.jpeg)
+Die Seite des Mitarbeiterarchivs enthält eine dynamische Tabelle der gelöschten Mitarbeiter mit der Möglichkeit, sie wiederherzustellen und auf ihre Historie zuzugreifen. ![](assets/Praktikumsprojekt/24.jpeg)
 
-![](../assets/Praktikumsprojekt/26.jpeg) ![](../assets/Praktikumsprojekt/27.jpeg)
+![](assets/Praktikumsprojekt/26.jpeg) ![](assets/Praktikumsprojekt/27.jpeg)
 
 Bei der Wiederherstellung des Mitarbeiters muss ein Raum gewählt werden.
 
-Die Seite des Ausrüstungsarchiv enthält eine dynamische Tabelle der gelöschten Ausrüstungen mit der Möglichkeit, sie wiederherzustellen. ![](../assets/Praktikumsprojekt/28.jpeg) ![](../assets/Praktikumsprojekt/29.jpeg)
+Die Seite des Ausrüstungsarchiv enthält eine dynamische Tabelle der gelöschten Ausrüstungen mit der Möglichkeit, sie wiederherzustellen. ![](assets/Praktikumsprojekt/28.jpeg) ![](assets/Praktikumsprojekt/29.jpeg)
 
-Vielen Dank, dass Sie sich die Zeit genommen haben, bis hierher zu lesen 🧡
-
-Copyright © 2023 Younes Khoubaz. Alle Rechte vorbehalten.
