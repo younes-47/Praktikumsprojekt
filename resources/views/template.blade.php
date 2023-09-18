@@ -133,7 +133,18 @@
                     </div>
                 @endif
 
+
+                
+
+                {{-- ACTUAL CONTENT HERE --}}
+
+
                 @yield('content')
+
+
+
+
+
             </div>
 
 
