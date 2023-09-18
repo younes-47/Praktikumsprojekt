@@ -14,7 +14,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // FOR cPanel shared hosting services. They use /public_htm as the default directory instead of /public
+        
+        $this->app->bind('path.public', function() {
+            return base_path('public_html');
+        });
     }
 
     /**
