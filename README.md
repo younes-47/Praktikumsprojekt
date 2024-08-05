@@ -1,125 +1,102 @@
-Management System Projekt
+Human & Material Resources Management System
 =========================
 
 
 
-### ![](https://younes-khoubaz.netlify.app/assets/info-shrinked.png) Wichtige Informationen
+### ![](https://younes-khoubaz.netlify.app/assets/info-shrinked.png) Useful Information
 
-*   Die Webanwendung ist hauptsächlich auf Französisch. Bitte erwägen Sie die Verwendung einer Übersetzererweiterung wie Google Translator oder des in Ihrem Browser integrierten Übersetzers, um die gesamte Seite zu übersetzen.
-*   voreingestellt Anmeldeinformationen:  
-    Nutzername: **admin**  
-    Passwort: **admin**
+*   The web application is mainly in French. Please consider using a translator extension such as Google Translator or your browser's built-in translator to translate the entire page.
+*   default login:  
+    username: **admin**  
+    password: **admin**
     
 
-### Einführung
+### Introduction
 
-Ich wurde als Praktikant damit beauftragt, eine Webanwendung zu entwickeln, die die Angestellten und die Ausrüstung in den verschiedenen Räumen des Berufungsgerichts verwaltet. Das Berufungsgericht hat große Schwierigkeiten, die dort arbeitenden Angestellten zu verwalten und die Materialien effizient auf die Räume zu verteilen.
-
-  
-Diese Anwendung wird der Verwaltung mehrere Dienste anbieten: Sie wird die Aufgabe vereinfachen, alle Mitarbeiter zu verwalten und ihre Bewegungen zwischen den Räumen zu verfolgen, sowie den Bestand der von der Regierung bereitgestellten Ausrüstung zu verwalten. Die Anwendung wird auch dazu beitragen, dass die Verwaltung Entscheidungen treffen kann, um die Arbeitsplätze gut zu verwalten.
-
-### Problematik
-
-Im Berufungsgericht findet die Verwaltung eine Schwierigkeit darin, die von der Regierung bereitgestellte Ausrüstung zu verwalten, ebenso wie die Mitarbeiter, die so oft ihren Arbeitsplatz (die Räume) wechseln. Dies macht es schwierig, jeden Mitarbeiter zu verfolgen, der mit einer bestimmten Aufgabe betraut ist und wie man zu ihm gelangt, außerdem sind die materiellen Ressourcen wie Computer, Drucker, Monitore ... ihre Menge auf jedem Schreibtisch und der Rest auf dem Lager.
+As an intern, I was tasked with developing a web application to manage the employees and equipment in the various rooms of the Court of Appeal. The Court of Appeal has great difficulty managing the employees working there and efficiently distributing equipement (printers, computers, monitors...) to workspaces. As well as handling an archive.
 
   
-Jeder Raum kann mehrere Mitarbeiter und mehrere Geräte enthalten, daher müssen wir eine Anwendung erstellen, die all dies verwaltet, um die Verwaltung der Personal- und Materialressourcen zu erleichtern.
+This application offers several services to the administration: It simplifies the task of managing all employees and tracking their relocations between workspaces, as well as managing the inventory of equipment provided by the government. It also features an archive section which keeps all the records of old employees and inventory.
 
-### Pflichtenheft
 
-*   Einen einzigen Benutzer haben, der die Kontrolle und den vollen Zugriff auf die Anwendung hat (Administrator).
-*   Der Administrator kann sich in voller Sicherheit authentifizieren, mit der Fähigkeit, das Passwort und den Benutzernamen zu ändern.
-*   Mitarbeiter können mit ihren notwendigen Informationen hinzugefügt werden, ebenso wie man sie löschen kann.
-*   Der Arbeitsraum eines jeden Mitarbeiters wird beim Hinzufügen des Mitarbeiters angegeben, was bedeutet, dass man keinen Mitarbeiter ohne Arbeitsraum haben kann.
-*   Alle Informationen über die Mitarbeiter können geändert werden.
-*   Die Anwendung speichert das Versetzungsdatum jedes Mal, wenn ein Mitarbeiter in einen anderen Raum versetzt wird, und berechnet die Zeit, die er dort verblieben ist.
-*   Das Löschen eines Mitarbeiters markiert nur, dass dieser Mitarbeiter gegangen ist. Die identifizierenden Informationen und der Transferverlauf über die Mitarbeiter bleiben im Archiv zugänglich.
-*   Ausrüstungen können mit Details, Typ, Modell und Menge hinzugefügt werden (das Detailfeld, in dem Informationen wie Konfiguration, Preis oder andere Notizen gespeichert werden, ist nicht obligatorisch).
-*   Ausrüstungen werden beim Hinzufügen automatisch im Lagerraum gespeichert, danach können sie zu den Räumen hinzugefügen.
-*   Das Entfernen von Ausrüstungen markiert nur, dass der Gegenstand entfernt wurde, und wird nicht in der Tabelle der Ausrüstungen angezeigt. Aber alle Informationen und die Menge, die zwischen den Räumen und dem Lager zirkuliert, bleiben im Archiv zugänglich.
-*   Die Anwendung muss den Archivbereich für Mitarbeiter und Ausrüstungen mit der Fähigkeit, sie wiederherzustellen, haben.
-*   Der Name und die Nummer sind bei der Erstellung eines Raums obligatorisch, man kann dann Ausrüstungen hinzufügen (optional).
-*   Man kann mehrere Ausrüstungen mit beliebiger Anzahl in einen Raum einfügen.
-*   Die Anwendung stellt sicher, dass die Menge, die man hinzufügen kann, ausreichend ist, wobei die Auswahl der Ausrüstungen in Abhängigkeit von den Ausrüstungen, die sich bereits im Lager befinden, angezeigt wird.
-*   Die Anwendung verwaltet die Lagermenge dynamisch, wenn eine Menge einer Ausrüstung in einem Raum hinzugefügt/entfernt wird.
-*   Sie können den Namen und die Nummer des Raums sowie die Anzahl der Geräte, die sich bereits in dem Raum befinden, ändern und neue Geräte zu dem Raum hinzufügen, wenn sie geändert werden.
-*   Die Anwendung muss sicherstellen, dass der Raum leer von Mitarbeitern und Geräten ist, bevor sie ihn löscht.
-*   Die Navigation der Anwendung sollte einfach und intuitiv sein.
-*   Die Anwendung sollte in jedem Abschnitt eine Suchfunktion enthalten, die dabei hilft, Datensätze auf der Grundlage beliebiger bereitgestellter Informationen zu finden.
-*   Tabellen müssen indiziert sein, mit der Funktionalität, sie nach Spalten zu ordnen.
-*   Die Anwendung muss mit Sonderfällen umgehen, bei denen Fehler auftreten können.
-*   Wenn ein Fehler auftritt, muss die Anwendung eine Meldung anzeigen, die den Fehlertyp enthält.
+### Specifications (+ Overall use cases)
 
-### Klassendiagramm des Projekts
+*   Have a single user who has control and full access to the application (administrator).
+*   The administrator can authenticate in full security, with the ability to change the password and username.
+*   Add/Delete employees with their necessary infos.
+*   The workspace of each employee is specified when the employee is added, which means that you cannot have an employee without a workspace.
+*   All information about employees can be changed.
+*   The application saves the transfer date each time an employee is transferred to another room and calculates the time they have been there.
+*   Deleting an employee only marks that this employee has left. The identifying information and transfer history about the employee remains accessible in the archive.
+*   Equipment can be added with details, type, model and quantity (the detail field, where information such as configuration, price or other notes are stored, is not mandatory).
+*   Equipment is automatically saved in the storage room when it is added, after which it can be added to the rooms.
+*   Removing equipment only marks that the item has been removed and is not displayed in the equipment table. But all information and the quantity that circulates between the workspaces and the inventory remain accessible in the archive.
+*   The application must have the archive area for employees and equipment with the ability to restore them.
+*   The name and number are mandatory when creating a room, you can then add equipment (optional).
+*   Multiple pieces of equipment can be added to a room in any number.
+*   The application ensures that the quantity that can be added is sufficient, displaying the selection of equipment depending on the equipment already in the warehouse.
+*   The application manages the storage quantity dynamically when a quantity of equipment is added/removed from a workspace.
+*   You can change the name and number of the room and the number of equipment already in the room and add new equipment to the room when it is changed.
+*   The application must ensure that a workspace is empty of employees and devices before deleting it.
+*   Navigation of the application should be simple and intuitive.
+*   The application should include a search function in each section to help find records based on any information provided.
+*   Tables must be indexed, with the functionality to sort them by column.
+*   The application must handle special cases where errors may occur.
+*   If an error occurs, the application must display a message containing the type of error.
 
-![Class Diagram](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/Klassendiagramm.png)
 
-### Die Hauptseiten der Anwendung
+### A Walkthrough:
 
-#### Anmeldeseite (Authentifizierung)
+#### Login page
 
 ![Login page](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/1.jpeg)
 
-Die Anmeldeseite enthält eine Box mit Einträgen für den Benutzernamen und das Passwort, das Logo des Justizministeriums und einen Titel, der die Hauptfunktionalität der Anwendung darstellt, um sie zu unterscheiden, da es andere Anwendungen gibt, die für andere Interessen verwendet werden, die auf dem lokalen Server des Berufungsgerichts gehostet werden.
-
-  
-
-#### Seite der Mitarbeiter
+#### Employees Page
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/6.1.jpeg)
 
-Der Inhalt der Mitarbeiterseite enthält eine dynamische Tabelle, in der alle Mitarbeiter und deren relevante Informationen angezeigt werden, mit Verwaltungsschaltflächen _(Hinzufügen, Anzeigen, Ändern und Löschen)_ .
+Adding an employee: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/5.jpeg)
 
-Diese Seite erbt wie die anderen Seiten ein eindeutiges Template. Diese Template besteht aus einer Kopfzeile und einer Navigationsleiste. Die Kopfzeile hat ein Symbol einer Benutzerform, die ein Auswahlmenü zum Abmelden und Ändern des Passworts und des Benutzernamens anzeigt.
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/6.jpeg)
 
-Fügen wir zu Demonstrationszwecken einen neuen Mitarbeiter hinzu: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/5.jpeg)
+Checking the details of the recently added employee by clicking on the eye icon. The system also tracks the employee's transfers between court rooms. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/7.gif)
 
-Der Mitarbeiter ist erfolgreich registriert! ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/6.jpeg)
+#### Equipment page
 
-Lassen Sie uns die Details des kürzlich hinzugefügten Mitarbeiters überprüfen, indem wir auf das Augensymbol klicken. Das System verfolgt auch die Versetzungen des Mitarbeiters zwischen den Räumen des Gerichts auf der Unterseite "Geschichte". ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/7.gif)
+Here we can see all the equipment that is in the inventory with the available stock and other details. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/10.jpeg)
 
-#### Seite der Ausrüstung
+Adding an equipment: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/11.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/10.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/12.jpeg)
 
-Hier können wir die gesamte Ausrüstung, die sich im Depot des Berufungsgerichts befindet, mit dem verfügbaren Bestand und anderen Details. es gibt auch die Schaltflächen zur Verwaltung _(Hinzufügen, Anzeigen, Ändern und Löschen)_ .
+The recently added equipment _(It doesn't appear in any room as we haven't done yet)_ . ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/13.jpeg)
 
-Fügen wir zu Demonstrationszwecken eine neue Ausrüstung hinzu: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/11.jpeg)
-
-Die Ausrüstung ist erfolgreich registriert! ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/12.jpeg)
-
-Lassen Sie uns die Details der kürzlich hinzugefügter Ausrüstung überprüfen. Wir können auch den verfügbaren Bestand sehen und sehen, in welchem Raum die Ausrüstung bereitgestellt wurde _(Es erscheint in keinem Raum, da wir es noch nicht getan haben)_ . ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/13.jpeg)
-
-#### Seite der Räume
+#### Workspaces page
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/4.jpeg)
 
-Die erste Seite, die nach der Authentifizierung angezeigt wird, ist die Raumseite. Der Inhalt der Seite Räume enthält eine dynamische Tabelle, die die aktuellen Räume innerhalb des Berufungsgerichts und die Anzahl der Mitarbeiter/Ausrüstungen in jedem Raum anzeigt sowie die Verwaltungsschaltflächen.
-
-Lassen Sie uns der raum des Fachwissens _("Section d'expertise")_ überprüfen. Wir können sehen, dass der neu hinzugefügte Mitarbeiter dort arbeitet und es keine Ausrüstung gibt. 
+Let's check the room of expertise _("Section d'expertise")_. We can see that the newly added employee is working there and there is no equipment.
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/16.jpeg)
 
-Lassen Sie uns also den Raum modifizieren, indem wir die kürzlich hinzugefügte Ausrüstung hinzufügen und den Namen des Raums in etwas wie "Physikalisches Labor" ändern. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/17.jpeg)
+So let's modify the room by adding the recently added equipment and changing the name of the room to something like "Physics Lab".
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/17.jpeg)
 
-die Änderung erfolgreich durchgeführt wurde! ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/18.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/18.jpeg)
 
-Wir können nun die hinzugefügte Ausrüstung mit ihrer Anzahl auf der Detailseite des Raums sehen. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/19.jpeg)
+We can now see the added equipment with quantity on the details page of the workspace. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/19.jpeg)
 
-Wenn wir die Detailseite der Ausrüstung überprüfen, können wir den verbleibenden Bestand im Depot und die Räume sehen, die diese bestimmte Ausrüstung enthalten. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/20.jpeg)
+If we check the details page of the equipment, we can see the remaining stock in the inventory and the workspaces that hold that particular equipment. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/20.jpeg)
 
-#### Archivseite
+#### Archive page
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/22.jpeg)
 
-Auf der Archivseite werden zwei Optionen zur Auswahl angezeigt: das Mitarbeiterarchiv und das Ausrüstungsarchiv.  
-Die gelöschten Mitarbeiter und Ausrüstungen werden gespeichert und können über diesen Bereich wieder aufgerufen werden.
+Delteting the recently added equipment and employee _(When deleting equipment, all stocks in the inverntory and in workspaces are deleted together)_. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/21.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/14.jpeg)
 
-Löschen wir zu Demonstrationszwecken die kürzlich hinzugefügten Ausrüstung und Mitarbeiter _(Bei der Löschung eines Equipments, werden alle Bestände im Depot und die Mengen in den Räumen gemeinsam ausgelöscht)_ : ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/21.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/14.jpeg)
-
-Die Seite des Mitarbeiterarchivs enthält eine dynamische Tabelle der gelöschten Mitarbeiter mit der Möglichkeit, sie wiederherzustellen und auf ihre Historie zuzugreifen. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/24.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/24.jpeg)
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/26.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/27.jpeg)
 
-Bei der Wiederherstellung des Mitarbeiters muss ein Raum gewählt werden.
+A worskspace must be selected when the employee is restored.
 
-Die Seite des Ausrüstungsarchiv enthält eine dynamische Tabelle der gelöschten Ausrüstungen mit der Möglichkeit, sie wiederherzustellen. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/28.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/29.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/28.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/29.jpeg)
