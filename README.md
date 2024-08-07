@@ -69,11 +69,11 @@ Adding an equipment: ![](https://younes-khoubaz.netlify.app/assets/Praktikumspro
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/12.jpeg)
 
-The recently added equipment _(It doesn't appear in any room as we haven't done yet)_ . ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/13.jpeg)
+The recently added equipment doesn't appear in any room as we haven't added it in one yet. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/13.jpeg)
 
 #### Workspaces page
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/4.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/15.jpeg)
 
 Let's check the room of expertise _("Section d'expertise")_. We can see that the newly added employee is working there and there is no equipment.
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/16.jpeg)
@@ -91,7 +91,7 @@ If we check the details page of the equipment, we can see the remaining stock in
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/22.jpeg)
 
-Delteting the recently added equipment and employee _(When deleting equipment, all stocks in the inverntory and in workspaces are deleted together)_. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/21.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/14.jpeg)
+Delteting the recently added equipment and employee _(When deleting equipment, all stocks in the inverntory and in workspaces are deleted together)_. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/9.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/14.jpeg)
 
 ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/24.jpeg)
 
