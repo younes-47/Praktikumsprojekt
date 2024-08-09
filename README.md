@@ -3,7 +3,7 @@ Human & Material Resources Management System
 
 
 
-### ![](https://younes-khoubaz.netlify.app/assets/info-shrinked.png) Useful Information
+### ![](https://younes-khoubaz.netlify.app/assets/icons/info-shrinked.png) Useful Information
 
 *   The web application is mainly in French. Please consider using a translator extension such as Google Translator or your browser's built-in translator to translate the entire page.
 *   default login:  
@@ -49,54 +49,54 @@ This application offers several services to the administration: It simplifies th
 
 #### Login page
 
-![Login page](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/1.jpeg)
+![Login page](https://younes-khoubaz.netlify.app/assets/court-management-system/1.jpeg)
 
 #### Employees Page
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/6.1.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/6.1.jpeg)
 
-Adding an employee: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/5.jpeg)
+Adding an employee: ![](https://younes-khoubaz.netlify.app/assets/court-management-system/5.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/6.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/6.jpeg)
 
-Checking the details of the recently added employee by clicking on the eye icon. The system also tracks the employee's transfers between court rooms. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/7.gif)
+Checking the details of the recently added employee by clicking on the eye icon. The system also tracks the employee's transfers between court rooms. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/7.gif)
 
 #### Equipment page
 
-Here we can see all the equipment that is in the inventory with the available stock and other details. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/10.jpeg)
+Here we can see all the equipment that is in the inventory with the available stock and other details. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/10.jpeg)
 
-Adding an equipment: ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/11.jpeg)
+Adding an equipment: ![](https://younes-khoubaz.netlify.app/assets/court-management-system/11.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/12.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/12.jpeg)
 
-The recently added equipment doesn't appear in any room as we haven't added it in one yet. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/13.jpeg)
+The recently added equipment doesn't appear in any room as we haven't added it in one yet. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/13.jpeg)
 
 #### Workspaces page
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/15.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/15.jpeg)
 
 Let's check the room of expertise _("Section d'expertise")_. We can see that the newly added employee is working there and there is no equipment.
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/16.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/16.jpeg)
 
 So let's modify the room by adding the recently added equipment and changing the name of the room to something like "Physics Lab".
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/17.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/17.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/18.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/18.jpeg)
 
-We can now see the added equipment with quantity on the details page of the workspace. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/19.jpeg)
+We can now see the added equipment with quantity on the details page of the workspace. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/19.jpeg)
 
-If we check the details page of the equipment, we can see the remaining stock in the inventory and the workspaces that hold that particular equipment. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/20.jpeg)
+If we check the details page of the equipment, we can see the remaining stock in the inventory and the workspaces that hold that particular equipment. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/20.jpeg)
 
 #### Archive page
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/22.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/22.jpeg)
 
-Delteting the recently added equipment and employee _(When deleting equipment, all stocks in the inverntory and in workspaces are deleted together)_. ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/9.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/14.jpeg)
+Delteting the recently added equipment and employee _(When deleting equipment, all stocks in the inverntory and in workspaces are deleted together)_. ![](https://younes-khoubaz.netlify.app/assets/court-management-system/9.jpeg) ![](https://younes-khoubaz.netlify.app/assets/court-management-system/14.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/24.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/24.jpeg)
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/26.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/27.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/26.jpeg) ![](https://younes-khoubaz.netlify.app/assets/court-management-system/27.jpeg)
 
 A worskspace must be selected when the employee is restored.
 
-![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/28.jpeg) ![](https://younes-khoubaz.netlify.app/assets/Praktikumsprojekt/29.jpeg)
+![](https://younes-khoubaz.netlify.app/assets/court-management-system/28.jpeg) ![](https://younes-khoubaz.netlify.app/assets/court-management-system/29.jpeg)
